@@ -42,7 +42,7 @@ enum ToastPosition {
  The `showToast` methods display any view as toast.
  
  */
-extension UIView {
+public extension UIView {
     
     /**
      Keys used for associated objects.
