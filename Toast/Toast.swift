@@ -26,7 +26,7 @@
 import UIKit
 import ObjectiveC
 
-enum ToastPosition {
+public enum ToastPosition {
     case Top
     case Center
     case Bottom
@@ -106,7 +106,7 @@ public extension UIView {
      @param duration The toast duration
      @param position The toast's position
      */
-    func makeToast(message: String, duration: NSTimeInterval, position: ToastPosition) {
+    public func makeToast(message: String, duration: NSTimeInterval, position: ToastPosition) {
         self.makeToast(message, duration: duration, position: position, style: nil)
     }
     
@@ -118,7 +118,7 @@ public extension UIView {
      @param duration The toast duration
      @param position The toast's center point
      */
-    func makeToast(message: String, duration: NSTimeInterval, position: CGPoint) {
+    public func makeToast(message: String, duration: NSTimeInterval, position: CGPoint) {
         self.makeToast(message, duration: duration, position: position, style: nil)
     }
     
@@ -131,7 +131,7 @@ public extension UIView {
      @param position The toast's position
      @param style The style. The shared style will be used when nil
      */
-    func makeToast(message: String, duration: NSTimeInterval, position: ToastPosition, style: ToastStyle?) {
+    public func makeToast(message: String, duration: NSTimeInterval, position: ToastPosition, style: ToastStyle?) {
         self.makeToast(message, duration: duration, position: position, title: nil, image: nil, style: style, completion: nil)
     }
     
@@ -143,8 +143,8 @@ public extension UIView {
      @param duration The toast duration
      @param position The toast's center point
      @param style The style. The shared style will be used when nil
-     */
-    func makeToast(message: String, duration: NSTimeInterval, position: CGPoint, style: ToastStyle?) {
+    public */
+    public func makeToast(message: String, duration: NSTimeInterval, position: CGPoint, style: ToastStyle?) {
         self.makeToast(message, duration: duration, position: position, title: nil, image: nil, style: style, completion: nil)
     }
     
@@ -163,7 +163,7 @@ public extension UIView {
      @param completion The completion closure, executed after the toast view disappears.
             didTap will be `true` if the toast view was dismissed from a tap.
      */
-    func makeToast(message: String?, duration: NSTimeInterval, position: ToastPosition, title: String?, image: UIImage?, style: ToastStyle?, completion: ((didTap: Bool) -> Void)?) {
+    public func makeToast(message: String?, duration: NSTimeInterval, position: ToastPosition, title: String?, image: UIImage?, style: ToastStyle?, completion: ((didTap: Bool) -> Void)?) {
         var toastStyle = ToastManager.shared.style
         if let style = style {
            toastStyle = style
@@ -192,7 +192,7 @@ public extension UIView {
      @param completion The completion closure, executed after the toast view disappears.
             didTap will be `true` if the toast view was dismissed from a tap.
      */
-    func makeToast(message: String?, duration: NSTimeInterval, position: CGPoint, title: String?, image: UIImage?, style: ToastStyle?, completion: ((didTap: Bool) -> Void)?) {
+    public func makeToast(message: String?, duration: NSTimeInterval, position: CGPoint, title: String?, image: UIImage?, style: ToastStyle?, completion: ((didTap: Bool) -> Void)?) {
         var toastStyle = ToastManager.shared.style
         if let style = style {
             toastStyle = style
@@ -213,7 +213,7 @@ public extension UIView {
     
     @param toast The view to be displayed as toast
     */
-    func showToast(toast: UIView) {
+    public func showToast(toast: UIView) {
         self.showToast(toast, duration: ToastManager.shared.duration, position: ToastManager.shared.position, completion: nil)
     }
     
@@ -228,7 +228,7 @@ public extension UIView {
      @param completion The completion block, executed after the toast view disappears.
      didTap will be `true` if the toast view was dismissed from a tap.
      */
-    func showToast(toast: UIView, duration: NSTimeInterval, position: ToastPosition, completion: ((didTap: Bool) -> Void)?) {
+    public func showToast(toast: UIView, duration: NSTimeInterval, position: ToastPosition, completion: ((didTap: Bool) -> Void)?) {
         let point = self.centerPointForPosition(position, toast: toast)
         self.showToast(toast, duration: duration, position: point, completion: completion)
     }
@@ -244,7 +244,7 @@ public extension UIView {
      @param completion The completion block, executed after the toast view disappears.
      didTap will be `true` if the toast view was dismissed from a tap.
      */
-    func showToast(toast: UIView, duration: NSTimeInterval, position: CGPoint, completion: ((didTap: Bool) -> Void)?) {
+    public func showToast(toast: UIView, duration: NSTimeInterval, position: CGPoint, completion: ((didTap: Bool) -> Void)?) {
         objc_setAssociatedObject(toast, &ToastKeys.Completion, ToastCompletionWrapper(completion), .OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         
         if let _ = objc_getAssociatedObject(self, &ToastKeys.ActiveToast) as? UIView where ToastManager.shared.queueEnabled {
@@ -271,7 +271,7 @@ public extension UIView {
     
      @param position The toast's position
      */
-    func makeToastActivity(position: ToastPosition) {
+    public func makeToastActivity(position: ToastPosition) {
         // sanity
         if let _ = objc_getAssociatedObject(self, &ToastKeys.ActiveToast) as? UIView {
             return
@@ -294,7 +294,7 @@ public extension UIView {
      
      @param position The toast's center point
      */
-    func makeToastActivity(position: CGPoint) {
+    public func makeToastActivity(position: CGPoint) {
         // sanity
         if let _ = objc_getAssociatedObject(self, &ToastKeys.ActiveToast) as? UIView {
             return
@@ -439,7 +439,7 @@ public extension UIView {
      @throws `ToastError.InsufficientData` when message, title, and image are all nil
      @return The newly created toast view
     */
-    func toastViewForMessage(message: String?, title: String?, image: UIImage?, style: ToastStyle) throws -> UIView {
+    internal func toastViewForMessage(message: String?, title: String?, image: UIImage?, style: ToastStyle) throws -> UIView {
         // sanity
         if message == nil && title == nil && image == nil {
             throw ToastError.InsufficientData
@@ -580,7 +580,7 @@ public extension UIView {
  sense to create your own custom UIView subclass and present it with the `showToast`
  methods.
 */
-struct ToastStyle {
+public struct ToastStyle {
     
     /**
      The background color. Default is `UIColor.blackColor()` at 80% opacity.
