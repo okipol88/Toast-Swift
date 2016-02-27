@@ -1,16 +1,20 @@
 {
   "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1AE4A4A0564E38992EFB0E8F9258432F89681A15",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "90c72ef5-1fdf-4a43-8847-ad0fdc5943b3" : {
 
+    }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "775E195363DA268E1E1924859088052B9B8BE981" : 0,
     "1AE4A4A0564E38992EFB0E8F9258432F89681A15" : 0,
-    "775E195363DA268E1E1924859088052B9B8BE981" : 0
+    "90c72ef5-1fdf-4a43-8847-ad0fdc5943b3" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "332B5743-ED98-44EA-BC62-A34924B1B90B",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "775E195363DA268E1E1924859088052B9B8BE981" : "Toast\/",
     "1AE4A4A0564E38992EFB0E8F9258432F89681A15" : "Toast-Swift\/",
-    "775E195363DA268E1E1924859088052B9B8BE981" : "Toast\/"
+    "90c72ef5-1fdf-4a43-8847-ad0fdc5943b3" : ".."
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Toast-Swift",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -25,6 +29,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/scalessec\/Toast.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "775E195363DA268E1E1924859088052B9B8BE981"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/itgen1.cloudapp.net:8443\/svn\/Hospitals",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "90c72ef5-1fdf-4a43-8847-ad0fdc5943b3"
     }
   ]
 }

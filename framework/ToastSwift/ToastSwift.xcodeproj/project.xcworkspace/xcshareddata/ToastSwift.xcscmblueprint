@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "90c72ef5-1fdf-4a43-8847-ad0fdc5943b3++425",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "90c72ef5-1fdf-4a43-8847-ad0fdc5943b3++425" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "90c72ef5-1fdf-4a43-8847-ad0fdc5943b3++425" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ABF02B96-6288-4FDB-B4F7-8E67C75BD517",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "90c72ef5-1fdf-4a43-8847-ad0fdc5943b3++425" : "Toast-Swift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ToastSwift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "framework\/ToastSwift\/ToastSwift.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/okipol88\/Toast-Swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "90c72ef5-1fdf-4a43-8847-ad0fdc5943b3++425"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/itgen1.cloudapp.net:8443\/svn\/Hospitals",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "90c72ef5-1fdf-4a43-8847-ad0fdc5943b3++425"
+    }
+  ]
+}
