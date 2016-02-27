@@ -582,6 +582,10 @@ public extension UIView {
 */
 public struct ToastStyle {
     
+    public init() {
+        
+    }
+    
     /**
      The background color. Default is `UIColor.blackColor()` at 80% opacity.
     */
@@ -721,6 +725,9 @@ public struct ToastStyle {
  notifications. Backed by a singleton instance.
 */
 public class ToastManager {
+    
+    public init() {
+    }
     
     /**
      The `ToastManager` singleton instance.
