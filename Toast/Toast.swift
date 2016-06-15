@@ -373,9 +373,9 @@ public extension UIView {
         
         self.addSubview(toast)
         
-        UIView.animateWithDuration(ToastManager.shared.style.fadeDuration, delay: 0.0, options: [.CurveEaseOut, .AllowUserInteraction], animations: { () -> Void in
+        UIView.animateWithDuration(ToastManager.shared.style.fadeDuration, delay: 0.0, options: [.CurveEaseOut, .AllowUserInteraction], animations: { () -> () in
             toast.alpha = 1.0
-        }) { (finished) -> Void in
+        }) { (finished) -> () in
             let timer = NSTimer(timeInterval: duration, target: self, selector: #selector(UIView.toastTimerDidFinish(_:)), userInfo: toast, repeats: false)
             NSRunLoop.mainRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
             objc_setAssociatedObject(toast, &ToastKeys.Timer, timer, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
