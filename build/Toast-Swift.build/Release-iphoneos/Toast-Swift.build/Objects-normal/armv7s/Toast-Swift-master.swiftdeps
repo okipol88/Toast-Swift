@@ -1,0 +1,7 @@
+version: "Apple Swift version 2.3 (swiftlang-800.10.12 clang-800.0.38)"
+options: "a20e8df2cc409b90028e3dc61b0795dd"
+build_time: [528491045, 864368000]
+inputs:
+  "/Users/user/projects/github/my/Toast-Swift/Demo/ViewController.swift": [9223372036854775807, 0]
+  "/Users/user/projects/github/my/Toast-Swift/Toast/Toast.swift": [9223372036854775807, 0]
+  "/Users/user/projects/github/my/Toast-Swift/Demo/AppDelegate.swift": [9223372036854775807, 0]
